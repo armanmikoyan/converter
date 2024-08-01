@@ -64,7 +64,6 @@ button:hover {
 #result {
  /* Initially hide the result div */
    margin-top: 20px;
-   padding: 20px;
    font-size: 18px;
    text-align: center;
    color: #ffffff; /* Dark text color for readability */
