@@ -67,7 +67,8 @@ button:hover {
    padding: 20px;
    font-size: 18px;
    text-align: center;
-   color: #000000; /* Dark text color for readability */
+   color: #ffffff; /* Dark text color for readability */
+   font-weight: bold;
    border-radius: 12px; /* Rounded corners */
    margin-left: auto;
    margin-right: auto;
