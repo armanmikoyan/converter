@@ -217,21 +217,22 @@ nav .header li a:hover {
 }
 
 /* Mobile Responsiveness for navigation */
-@media (max-width: 330px) {
+@media (max-width: 450px) {
    .logo {
     
      margin: 0 auto;
      
    }
    nav {
-      gap: 20px;
       text-align: center;
       flex-direction: column; /* Stack items vertically on smaller screens */
       align-items: flex-start;
       justify-content: center;
+      padding-bottom: 30px;
    }
 
    nav .header {
+      margin-top: 20px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -242,6 +243,7 @@ nav .header li a:hover {
 
    }
    nav .header li {
+      margin-top: 30px;
       text-align: center;
 
    }
