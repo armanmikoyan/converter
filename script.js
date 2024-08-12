@@ -50,3 +50,16 @@ async function convertToMp3() {
       progressContainer.style.display = 'none'; 
    }
 }
+
+
+
+const menu = document.querySelector(".menu");
+const header = document.querySelector(".header");
+
+menu.addEventListener("click", () => {
+    if (header.style.display === "none" || header.style.display === "") {
+        header.style.display = "flex";
+    } else {
+        header.style.display = "none";
+    }
+});

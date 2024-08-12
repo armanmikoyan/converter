@@ -8,6 +8,8 @@ body, html {
    background: linear-gradient(#00052f, #014580); /* Gradient background */
 }
 
+
+
 /* Container centered using Flexbox */
 .container {
    display: flex;
@@ -111,6 +113,10 @@ button:hover {
    display: none; /* Hidden by default */
 }
 
+
+.menu {
+   display: none;
+}
 /* Progress bar */
 #progress-bar {
    width: 0;
@@ -187,10 +193,6 @@ nav {
    margin-bottom: 100px;
 }
 
-/* Logo Styling */
-nav .logo {
-   height: 50px; /* Adjust logo size */
-}
 
 /* Header Links Styling */
 nav .header {
@@ -216,28 +218,44 @@ nav .header li a:hover {
    color: #007bff; /* Change color on hover */
 }
 
+@media (width: 506) {
+   body {
+      background-color: #fff;
+   }
+   .header li a {
+      color: #000000  !important;
+      font-size: 10px  !important;
+   }
+}
+
 /* Mobile Responsiveness for navigation */
-@media (max-width: 450px) {
+@media (max-width: 390px) {
    .logo {
-    
-     margin: 0 auto;
-     
+     display: none;  
+   }
+   .menu {
+      display: block;
+      margin-left: 30px;
+      margin: 0 auto;
    }
    nav {
       text-align: center;
       flex-direction: column; /* Stack items vertically on smaller screens */
       align-items: flex-start;
       justify-content: center;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
    }
 
+
+   nav .header li {
+      margin: 0;
+   }
    nav .header {
-      margin-top: 20px;
+      margin: 0 auto;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       text-align: center;
-      margin: 0 auto;
       padding: 0;
       gap: 30px;
 
@@ -400,3 +418,4 @@ footer p {
        font-size: 12px; /* Smaller font size for very small screens */
    }
 }
+
