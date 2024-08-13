@@ -422,3 +422,53 @@ footer p {
    }
 }
 
+
+.carousel-container  {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #0e7a7e;
+    color: #ffffff;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.carousel-links a {
+   color: #000053;
+}
+
+
+.carousel {
+    display: flex;
+    width: 200%; /* This should be twice the width of the container */
+    animation: scroll 20s linear infinite;
+}
+
+.item {
+    flex: 1 0 auto;
+    min-width: 20%; /* Adjust this value depending on the number of items */
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.more {
+   min-width: 10% !important;
+}
+.carousel-fast {
+   animation-duration: 15s; /* Faster scrolling for the second carousel */
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0); /* Scroll the width of the first half */
+    }
+}
+
