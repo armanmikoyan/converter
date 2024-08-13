@@ -5,7 +5,21 @@ body, html {
    padding: 0;
    height: 100%;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background: linear-gradient(#00052f, #014580); /* Gradient background */
+   overflow-x: hidden;
+   position: relative;
+   background: transparent;
+}
+
+
+
+#background-video {
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-width: 100%; 
+   min-height: 100%;
+   z-index: -1;
+   object-fit: cover;
 }
 
 
@@ -98,7 +112,7 @@ button:hover {
 .title {
    margin-top: 150px;
    text-align: center;
-   color: #007bff;
+   color: #2990ff;
    font-weight: bold;
 }
 
@@ -163,7 +177,7 @@ button:hover {
 
 
 .guide {
-   color: #000000;
+   color: #ffffff;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -171,7 +185,7 @@ button:hover {
    gap: 150px;
    flex-direction: column;
    padding: 30px;
-   background-color: #0e7a7e; 
+   background: rgba(36, 137, 246, 0.5);/* Background color of the navigation bar */
    width: 60%;
    border-radius: 10px;
 }
@@ -185,7 +199,7 @@ nav {
    position: sticky; /* Make the navbar sticky */
    top: 0; /* Stick to the top of the viewport */
    z-index: 1000; /* Ensure the navbar is above other content */
-   background-color: #0e7a7e; /* Background color of the navigation bar */
+   background: rgba(36, 137, 246, 0.5);/* Background color of the navigation bar */
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -280,7 +294,7 @@ a {
    max-width: 800px;
    margin: 0 auto;
    padding: 20px;
-   background-color: #f9f9f9;
+   background-color: #ffffff;
    border-radius: 8px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -348,7 +362,7 @@ main {
 }
 
 article {
-   background: #fff;
+   background: #ffffff;
    border-radius: 8px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    padding: 20px;
@@ -392,7 +406,7 @@ article a:hover {
 /* General Footer Styles */
 footer {
    color: #ffffff;
-   background-color: #0e7a7e; /* Light background color for contrast */
+   background: rgba(36, 137, 246, 0.5);/* Background color of the navigation bar */
    padding: 20px 0; /* Vertical padding */
    text-align: center; /* Center the text */
    position: relative; /* Ensures it is placed relative to its normal flow */
@@ -427,7 +441,7 @@ footer p {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #0e7a7e;
+    background: rgba(36, 137, 246, 0.5);/* Background color of the navigation bar */
     color: #ffffff;
     margin-bottom: 100px;
     margin-top: 100px;
