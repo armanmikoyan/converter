@@ -1,13 +1,14 @@
 /* Reset some default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body, html {
    overflow: auto;
    margin: 0;
    padding: 0;
    height: 100%;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    overflow-x: hidden;
    position: relative;
    background: transparent;
+   font-family: "Montserrat", sans-serif;
 }
 
 
